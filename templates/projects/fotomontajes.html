@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="project-hero" style="background-image: url('/static/img/hero/fotomontaje-hero.jpg');">
+    <div class="project-intro">
+        <span class="category">Manipulación Digital</span>
+        <h1>FOTOMONTAJES</h1>
+        <p>Exploración técnica entre lo orgánico y lo fantástico.</p>
+    </div>
+</section>
+
+<section class="block-padding">
+    <h2>Realismo vs. Fantasía</h2>
+    <p>En estos proyectos, el desafío fue la integración de iluminación y perspectiva para crear escenas que desafían la realidad pero mantienen coherencia visual.</p>
+    
+    <div class="slider-container" style="margin-top: 50px;">
+        <div class="img-after" style="background-image: url('/static/img/projects/foto-realista-final.jpg');"></div>
+        <div class="img-before" style="background-image: url('/static/img/projects/foto-realista-raw.jpg');"></div>
+        <div class="drag-line"></div>
+    </div>
+</section>
+
+<section class="portfolio-grid">
+    <div class="grid-item"><img src="/static/img/projects/irrealista-1.jpg" alt="Obra 1"></div>
+    <div class="grid-item"><img src="/static/img/projects/irrealista-2.jpg" alt="Obra 2"></div>
+</section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="project-hero cebate-bg">
+    <div class="project-intro">
+        <span class="category">Branding</span>
+        <h1>CEBATE</h1>
+        <p>Identidad visual para marca de mate contemporánea.</p>
+        <p class="year">2023</p>
+    </div>
+</section>
+
+<section class="project-concept block-padding">
+    <h2>El Desafío</h2>
+    <p>Desarrollar una identidad visual que respete la tradición del mate argentino, pero con un lenguaje moderno, minimalista y atractivo para nuevas generaciones.</p>
+</section>
+
+<section class="project-process block-padding">
+    <h2>El Proceso</h2>
+    <div class="process-grid">
+        <div class="process-text">
+            <p>Empezamos con moodboards enfocados en texturas orgánicas, evolucionando hacia un isologotipo dinámico...</p>
+        </div>
+        <div class="process-images">
+            <img src="{{ url_for('static', filename='img/projects/cebate-boceto.jpg') }}" alt="Bocetos">
+        </div>
+    </div>
+</section>
+
+<section class="project-results block-padding">
+    <h2>Identidad Visual</h2>
+    <div class="mockup-container">
+        <img src="{{ url_for('static', filename='img/projects/cebate-packaging.jpg') }}" class="hover-zoom" alt="Packaging">
+    </div>
+</section>
+
+<section class="wow-section">
+    <h2>Construcción del Isotipo</h2>
+    <div class="animation-container" id="logo-animation">
+        </div>
+</section>
+
+<section class="next-project">
+    <p>Siguiente Proyecto</p>
+    <a href="{{ url_for('project_yogui') }}"><h2>YOGUI App (UX/UI) ➔</h2></a>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Ejemplo rápido de GSAP para la página de Cebate
+    gsap.from(".project-intro h1", {y: 50, opacity: 0, duration: 1, delay: 0.5});
+</script>
+{% endblock %}
