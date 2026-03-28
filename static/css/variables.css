@@ -1,0 +1,23 @@
+/* variables.css */
+:root {
+    /* Paleta de Colores (Dark Theme Premium) */
+    --bg-color: #0a0a0a;
+    --text-main: #f4f4f4;
+    --text-muted: #a0a0a0;
+    --accent-color: #ff3366; /* Un color vibrante para destacar CTA o detalles */
+    --surface-color: #1a1a1a;
+
+    /* Tipografía */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Monument Extended', 'Inter', sans-serif; /* Ideal para portfolios pro */
+
+    /* Espaciados */
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Transiciones */
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

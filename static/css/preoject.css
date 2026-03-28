@@ -1,0 +1,92 @@
+/* projects.css */
+
+.block-padding {
+    padding: var(--spacing-lg) 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- HERO DEL PROYECTO --- */
+.project-hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--spacing-xl) 5%;
+    background-color: var(--surface-color); /* Por si no carga la imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ejemplo para inyectar fondos específicos por proyecto */
+.cebate-bg {
+    /* Background placeholder, ideal inyectarlo en línea desde Flask o acá */
+    background-image: linear-gradient(to top, var(--bg-color), transparent), url('../img/projects/cebate-hero.jpg');
+}
+
+.project-intro .category {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.project-intro h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+.project-intro .year {
+    color: var(--text-muted);
+    margin-top: 1rem;
+}
+
+/* --- GRID DE PROCESO --- */
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+    margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- MOCKUPS E IMÁGENES --- */
+.mockup-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-md);
+}
+
+/* --- SIGUIENTE PROYECTO (FOOTER DE PROYECTO) --- */
+.next-project {
+    text-align: center;
+    padding: var(--spacing-xl) 5%;
+    background-color: var(--surface-color);
+    margin-top: var(--spacing-xl);
+}
+
+.next-project p {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.next-project h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 4rem);
+    transition: color var(--transition-fast);
+}
+
+.next-project a:hover h2 {
+    color: var(--accent-color);
+}
