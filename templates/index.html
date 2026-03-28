@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio | Portfolio Multimedia{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Diseñador Multimedia <br> <span class="highlight">& Visual Artist</span></h1>
+        <a href="#trabajos" class="cta-button">Ver proyectos</a>
+    </div>
+    </section>
+
+<section id="trabajos" class="portfolio-grid">
+    
+    <a href="{{ url_for('project_cebate') }}" class="grid-item">
+        <img src="{{ url_for('static', filename='img/projects/cebate-thumb.jpg') }}" alt="Cebate Branding">
+        <div class="item-overlay">
+            <h2>CEBATE</h2>
+            <p>Branding & Identidad</p>
+        </div>
+    </a>
+
+    <a href="{{ url_for('project_yogui') }}" class="grid-item">
+        <img src="{{ url_for('static', filename='img/projects/yogui-thumb.jpg') }}" alt="Yogui UX/UI">
+        <div class="item-overlay">
+            <h2>YOGUI</h2>
+            <p>UX/UI Design</p>
+        </div>
+    </a>
+
+    </section>
+{% endblock %}
